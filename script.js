@@ -13,7 +13,7 @@ document.getElementById("submit").onclick = function(){
         }
         else if(num < rn){
             attempts++;
-            document.getElementById("result").innerHTML = `<p style='padding: 20px; box-shadow: 1px 10px 10px 10px gray;'> Too Low, Attempts: ${attempts}</p>`
+            document.getElementById("result").innerHTML = `<p style='padding: 20px;'> Too Low, Attempts: ${attempts}</p>`
         }
         else{
             attempts++;
