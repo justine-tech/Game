@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess a Number</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="ques">
-<h1>Guess a Number Game</h1>
-<p>I'm thinking of a number between 1 and 50.</p>
-<input id="num" type="number">
-<br><br>
-<button id="submit">Submit</button>
+    <div>
+    <input id="result" type="text" disabled>
+    <br><br>
+    <button onclick="clears()" style="left: 36px; position: relative; font-size: 11px;">C</button>
+    <button onclick="powers()" style="left: 36px; position: relative; font-size: 11px;">POWER</button>
+    <br>
+    <button id="num7" onclick="clickable('7')">7</button>
+    <button id="num8" onclick="clickable('8')">8</button>
+    <button id="num9" onclick="clickable('9')">9</button> 
+    <button id="numdiv" onclick="clickable('/')" style="background: rgb(248,198,66);">÷</button>
+    <br>
+    <button id="num4" onclick="clickable('4')">4</button>
+    <button id="num5" onclick="clickable('5')">5</button>
+    <button id="num6" onclick="clickable('6')">6</button> 
+    <button id="numtimes" onclick="clickable('*')" style="background: rgb(248,198,66);">x</button>
+    <br>
+    <button id="num1" onclick="clickable('1')">1</button>
+    <button id="num2" onclick="clickable('2')">2</button>
+    <button id="num3" onclick="clickable('3')">3</button> 
+    <button id="numminus" onclick="clickable('-')" style="background: rgb(248,198,66);">-</button>
+    <br>
+    <button id="num0" onclick="clickable('0')">0</button>
+    <button id="numdot" onclick="clickable('.')">.</button>
+    <button id="numeq" onclick="equals('=')" style="background: rgb(237,111,63);">=</button>
+    <button id="numplu" onclick="clickable('+')" style="background: rgb(248,198,66);">+</button>
+    
 </div>
-<br><br>
-<p id="result"></p>
 </body>
 <script src="script.js"></script>
 </html>
