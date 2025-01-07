@@ -1,52 +1,36 @@
 body{
-    align-items: center;
+    background: black;
+    color: white;
     text-align: center;
+    align-content: center;
     height: 100vh;
     margin: 0;
-    align-content: center;
-    top: -40px;
-    position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
 }
-.ques{
-    background: rgb(102, 49, 49);
-    color: white;
-    padding: 40px;
-    padding-bottom: 80px;
-    width: 270px;
-    text-align: center;
-    left: 500px;
+div{
+    background-color: rgb(66,79,97);
+    padding: 20px;
     display: inline-block;
-    border-radius: 20px;
-    box-shadow: 1px 10px 10px 10px gray;
-    border: 2px solid black;
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px 1px rgb(58, 55, 55);
 }
 button{
-    border-radius: 20px;
-    padding: 8px;
-    border: 1px solid black;
-    font-size: 11px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2px 0px;
+    font-family: verdana;
+    font-size: 20px;
+    padding: 3px 10px;
+    background-color: rgb(120,149,168);
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(120,149,168);
     font-weight: bold;
-}
-button:hover{
-    cursor: pointer;
-    text-decoration: underline 2px solid rgb(102, 49, 49);
-    font-size: 12px;
 }
 input{
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(152,175,188);
+    border-radius: 5px;
+    padding: 15px 5px;
+    font-family: verdana;
     font-weight: bold;
-}
-#result{
-    background-color: rgb(109, 151, 189);
-    color: white;
-    width: 300px;
-    display: inline-block;
-    border-radius: 20px;
-    box-shadow: 1px 10px 10px 10px gray;
+    font-size: 20px;
+    width: 190px;
 }
