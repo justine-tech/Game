@@ -1,26 +1,62 @@
-let rn = Math.floor(Math.random() * 50) + 1;
-let attempts = 0;
-document.getElementById("submit").onclick = function(){
-    let num = document.getElementById("num").value;
-    if (num>=51)
-    {
-        alert(`Please Enter The number 1-50 only`)
-    }
-    else{
-        if(num > rn){
-            attempts++;
-            document.getElementById("result").innerHTML = `<p style='padding: 20px;'> Too High, Attempts: ${attempts}</p>`
-        }
-        else if(num < rn){
-            attempts++;
-            document.getElementById("result").innerHTML = `<p style='padding: 20px;'> Too Low, Attempts: ${attempts}</p>`
-        }
-        else{
-            attempts++;
-            submit.disabled = true;
-            document.getElementById("result").innerHTML = `<p style='padding: 20px;'> Correct, Attempts: ${attempts} <br> Reload To Play Again!</p>`
-             }
-        }
-    }
+function clickable(value){
+    document.getElementById("result").value += value;
+}
 
+function clears(){
+    document.getElementById("result").value = "";
+}
 
+function equals(){
+    let total = eval(document.getElementById("result").value);
+    document.getElementById("result").value = total;
+}
+
+let clicker = 0;
+
+function powers(){
+clicker ++;
+if(clicker == 1){
+    alert("OFF");
+    document.getElementById("result").value = "OFF";
+    num1.disabled = true;
+    num2.disabled = true;
+    num3.disabled = true;
+    num4.disabled = true;
+    num5.disabled = true;
+    num6.disabled = true;
+    num7.disabled = true;
+    num8.disabled = true;
+    num9.disabled = true;
+    numdot.disabled = true;
+    num0.disabled = true;
+    numeq.disabled = true;
+    numplu.disabled = true;
+    numdiv.disabled = true;
+    numtimes.disabled = true;
+    numminus.disabled = true;
+ }
+ else{
+    document.getElementById("result").value = "";
+    clicker--;
+    clicker--;
+    alert("ON");
+    num1.disabled = false;
+    num2.disabled = false;
+    num3.disabled = false;
+    num4.disabled = false;
+    num5.disabled = false;
+    num6.disabled = false;
+    num7.disabled = false;
+    num8.disabled = false;
+    num9.disabled = false;
+    numdot.disabled = false;
+    num0.disabled = false;
+    numeq.disabled = false;
+    numplu.disabled = false;
+    numdiv.disabled = false;
+    numtimes.disabled = false;
+    numminus.disabled = false;
+ }
+
+ 
+}
